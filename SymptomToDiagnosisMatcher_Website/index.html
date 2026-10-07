@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Symptom to Diagnosis Matcher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="brand">
+      <div class="brand-icon">+</div>
+      <div>
+        <h1>Symptom to Diagnosis Matcher</h1>
+        <p>DSA-3 • 25CS2103E</p>
+      </div>
+    </div>
+    <button id="themeBtn" class="icon-btn" title="Toggle theme">☾</button>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="dashboard.html">Dashboard</a>
+      <a class="active" href="index.html">Analyzer</a>
+      <a href="login.html" data-auth-link>Log in</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <span class="badge">EDUCATIONAL DECISION SUPPORT</span>
+        <h2>Understand symptoms.<br><span>Explore possible conditions.</span></h2>
+        <p>
+          Enter symptoms in your own words. The system normalizes them,
+          matches them against a structured knowledge base, scores candidates,
+          and explains the matching.
+        </p>
+        <div class="hero-meta" aria-label="Project features">
+          <span>Free-text input</span>
+          <span>Synonym mapping</span>
+          <span>Explainable results</span>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="pulse">♥</div>
+        <strong>Transparent matching</strong>
+        <small>Scores are based on the sample project knowledge base.</small>
+      </div>
+    </section>
+
+    <section class="input-card">
+      <div class="section-title">
+        <div>
+          <h3>Enter Symptoms</h3>
+          <p>Example: fever, coughing, throat pain</p>
+        </div>
+        <button id="exampleBtn" class="secondary-btn">Use Example</button>
+      </div>
+
+      <textarea id="symptoms" placeholder="Describe the symptoms here..."></textarea>
+
+      <div class="quick-tags">
+        <button class="tag" data-symptom="fever">Fever</button>
+        <button class="tag" data-symptom="cough">Cough</button>
+        <button class="tag" data-symptom="sore throat">Sore throat</button>
+        <button class="tag" data-symptom="headache">Headache</button>
+        <button class="tag" data-symptom="fatigue">Fatigue</button>
+        <button class="tag" data-symptom="wheezing">Wheezing</button>
+        <button class="tag" data-symptom="ear pain">Ear pain</button>
+        <button class="tag" data-symptom="palpitations">Palpitations</button>
+        <button class="tag" data-symptom="eye watering">Eye watering</button>
+        <button class="tag" data-symptom="nausea">Nausea</button>
+        <button class="tag" data-symptom="rash">Rash</button>
+        <button class="tag" data-symptom="blurred vision">Blurred vision</button>
+        <button class="tag" data-symptom="weakness">Weakness</button>
+        <button class="tag" data-symptom="weight change">Weight change</button>
+      </div>
+
+      <button id="analyzeBtn" class="primary-btn">Analyze Symptoms →</button>
+      <p class="notice">For educational demonstration only — not a medical diagnosis.</p>
+    </section>
+
+    <section id="resultsSection" class="results hidden">
+      <div class="section-title">
+        <div>
+          <h3>Analysis Results</h3>
+          <p id="normalizedText"></p>
+        </div>
+        <button id="clearBtn" class="secondary-btn">Clear</button>
+      </div>
+      <div id="results"></div>
+    </section>
+
+    <section class="how">
+      <h3>How the system works</h3>
+      <div class="steps">
+        <div><b>01</b><span>Read free-text input</span></div>
+        <div><b>02</b><span>Normalize symptoms</span></div>
+        <div><b>03</b><span>Search knowledge base</span></div>
+        <div><b>04</b><span>Calculate scores</span></div>
+        <div><b>05</b><span>Rank candidates</span></div>
+        <div><b>06</b><span>Display explainable results</span></div>
+      </div>
+    </section>
+
+    <footer>
+      <p><strong>Symptom to Diagnosis Matcher</strong> • Pavan Kumar (2520090200) • Rishi (2520090131)</p>
+      <p>DSA-3 (25CS2103E) • Educational prototype</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

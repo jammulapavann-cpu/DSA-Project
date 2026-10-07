@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Symptom to Diagnosis Matcher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="profile">
+  <header class="navbar">
+    <a class="brand brand-link" href="dashboard.html">
+      <div class="brand-icon">+</div>
+      <div><h1>Symptom to Diagnosis Matcher</h1><p>EDUCATIONAL DECISION SUPPORT</p></div>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="index.html">Check symptoms</a>
+      <a class="active" href="profile.html">Profile</a>
+      <button id="logoutBtn" class="text-btn" type="button">Log out</button>
+    </nav>
+  </header>
+  <main class="profile-layout container">
+    <section class="profile-heading"><span class="eyebrow">ACCOUNT</span><h2>Your profile</h2><p>Manage your local demo identity and return to your workspace.</p></section>
+    <section class="profile-card">
+      <div class="profile-avatar" id="profileInitials">SM</div>
+      <div class="profile-details"><span class="eyebrow">SIGNED IN AS</span><h1 id="profileName">Demo user</h1><p id="profileEmail">demo@example.com</p></div>
+      <div class="profile-actions"><a class="secondary-btn inline-btn" href="dashboard.html">Back to dashboard</a><button id="profileLogoutBtn" class="primary-btn compact-btn" type="button">Log out</button></div>
+    </section>
+    <section class="profile-card profile-safety"><strong>Demo storage notice</strong><p>This prototype keeps your profile and analysis history in this browser's local storage. It does not connect to a server or provide real medical authentication.</p></section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

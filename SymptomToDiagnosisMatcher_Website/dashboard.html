@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Symptom to Diagnosis Matcher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="dashboard">
+  <header class="navbar">
+    <a class="brand brand-link" href="dashboard.html">
+      <div class="brand-icon">+</div>
+      <div><h1>Symptom to Diagnosis Matcher</h1><p>EDUCATIONAL DECISION SUPPORT</p></div>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a class="active" href="dashboard.html">Dashboard</a>
+      <a href="index.html">Check symptoms</a>
+      <a href="#previous-results">Previous results</a>
+      <a href="#about-project">About project</a>
+      <a href="profile.html">Profile</a>
+      <button id="logoutBtn" class="text-btn" type="button">Log out</button>
+    </nav>
+  </header>
+  <main class="dashboard container">
+    <section class="dashboard-hero">
+      <div>
+        <span class="eyebrow">OPERATIONS OVERVIEW</span>
+        <h2>Welcome back, <span id="userName">there</span>.</h2>
+        <p>Monitor recent analyses, review prior comparisons, and continue refining symptom-based decision support work from one professional workspace.</p>
+      </div>
+      <div class="hero-actions">
+        <div class="status-chip"><span class="dot"></span> Prototype active</div>
+        <a class="primary-btn compact-btn" href="index.html">Start new analysis <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="stats-grid" aria-label="Activity summary">
+      <article class="stat-card">
+        <span class="stat-label">ANALYSES RUN</span>
+        <strong id="analysisCount">0</strong>
+        <small>Across this browser session</small>
+      </article>
+      <article class="stat-card">
+        <span class="stat-label">LAST INPUT</span>
+        <strong id="lastInput">None yet</strong>
+        <small>Most recent symptom set reviewed</small>
+      </article>
+      <article class="stat-card accent-stat">
+        <span class="stat-label">KNOWLEDGE BASE</span>
+        <strong id="knowledgeBaseCount">0</strong>
+        <small>Condition patterns available</small>
+      </article>
+    </section>
+
+    <section class="dashboard-grid">
+      <article id="previous-results" class="panel-card history-panel">
+        <div class="panel-heading">
+          <div>
+            <span class="eyebrow">PREVIOUS RESULTS</span>
+            <h3>Case history</h3>
+          </div>
+          <a href="index.html">New review</a>
+        </div>
+        <div id="historyList" class="history-list"></div>
+      </article>
+
+      <aside class="panel-card guide-panel">
+        <div class="guide-header">
+          <span class="guide-icon">✦</span>
+          <h3>Professional input practices</h3>
+        </div>
+        <ul class="guidance-list">
+          <li>Describe symptoms in specific, plain-language terms.</li>
+          <li>Include notable severity, duration, and pattern changes.</li>
+          <li>Use the system as an educational decision-support aid only.</li>
+        </ul>
+        <a class="secondary-btn inline-btn" href="index.html">Explore symptoms</a>
+      </aside>
+    </section>
+
+    <section id="about-project" class="panel-card about-panel">
+      <div class="about-copy">
+        <span class="eyebrow">ABOUT PROJECT</span>
+        <h3>Explainable symptom matching</h3>
+        <p>Symptom to Diagnosis Matcher is an educational decision-support prototype designed to normalize free-text symptoms, compare them against a structured knowledge base, rank likely condition patterns, and explain the matching logic behind each score.</p>
+      </div>
+      <div class="about-flow">
+        <span>01 Input</span>
+        <span>02 Normalize</span>
+        <span>03 Match</span>
+        <span>04 Explain</span>
+      </div>
+    </section>
+
+    <p class="notice dashboard-notice">For educational demonstration only — not a medical diagnosis.</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

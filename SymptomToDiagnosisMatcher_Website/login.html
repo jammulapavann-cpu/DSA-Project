@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Symptom to Diagnosis Matcher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="auth">
+  <header class="navbar">
+    <a class="brand brand-link" href="index.html">
+      <div class="brand-icon">+</div>
+      <div><h1>Symptom to Diagnosis Matcher</h1><p>EDUCATIONAL DECISION SUPPORT</p></div>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="index.html">Analyzer</a>
+      <a href="signup.html">Create account</a>
+    </nav>
+  </header>
+  <main class="auth-layout">
+    <section class="auth-intro">
+      <span class="badge">YOUR HEALTH EXPLORATION SPACE</span>
+      <h2>Keep your symptom checks in one place.</h2>
+      <p>Sign in to review your recent educational analyses and return to the symptom matcher quickly.</p>
+      <div class="auth-note"><strong>Private by design</strong><span>This demo stores account data only in this browser. Do not enter real medical or sensitive information.</span></div>
+    </section>
+    <section class="auth-card">
+      <div class="eyebrow">WELCOME BACK</div>
+      <h1>Log in</h1>
+      <p class="form-copy">Use your demo account to open the dashboard.</p>
+      <form id="loginForm">
+        <label for="loginEmail">Email</label>
+        <input id="loginEmail" type="email" placeholder="you@example.com" required>
+        <label for="loginPassword">Password</label>
+        <input id="loginPassword" type="password" placeholder="Your password" required>
+        <button class="primary-btn" type="submit">Log in <span>→</span></button>
+        <p id="loginMessage" class="form-message" role="status"></p>
+      </form>
+      <p class="switch-copy">New here? <a href="signup.html">Create an account</a></p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
